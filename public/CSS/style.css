@@ -1,0 +1,161 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    display: flex;
+   flex-direction: column;
+   position: relative;
+} 
+.container{
+    flex: 1;
+}
+ /* Navbar Start */
+ .navbar {
+    height: 5rem;
+    background-color: white !important;
+    z-index: 100; /* Make it higher than default elements but lower than .crsr */
+    position: relative; /* Ensure it respects z-index */
+    overflow: visible;
+}
+
+ .cf{
+    background-color: white !important;
+ }
+ .fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+   
+ }
+.navbar-nav a{
+    color: #222222;
+}
+
+/* Navbar End
+/* Footer Start */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+}
+
+.links a{
+    text-decoration: none;
+    color: #222222;
+    opacity: 75%;
+   
+   
+}
+
+.links a:hover{
+    opacity: 100%;
+    text-decoration: underline red;
+}
+
+
+
+.info{
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    background-color:#ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social i{
+    margin-right: 1rem;
+    font-size: 1.2rem; 
+    opacity: 50%;
+}
+
+.links,.social,.brand{
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    gap: 10px;
+}
+.social i:hover{
+    opacity: 100%;
+    transform: scale(1.2);
+    transition-duration: 1s;
+
+}
+
+/* Index page styling */
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem  !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    
+}
+
+.card-body{
+    padding: 0 !important;
+}
+.link{
+    text-decoration: none !important;  
+}
+/* card Effect */
+.card-img-overlay{
+    opacity: 0;
+    text-align: right;
+}
+.card-img-overlay:hover{
+    opacity: 0.1;
+    background-color: white;
+  
+}
+/* index page styling */
+/* new listing styling */
+.add-btn{
+    background-color:  #fe424d !important;
+    color: whitesmoke !important;
+    border: none !important;
+}
+
+/* new Page Styling */
+
+/* show page styling */
+
+.show-img{
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+
+}
+.show-btn{
+    display: flex;
+    gap: 10px;
+}
+#edit-btn{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.crsr {
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: fixed;
+    z-index: 9999; /* Ensure it's above everything */
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    pointer-events: none; /* Prevents interference with clicks */
+    cursor: progress;
+
+}
+
+
+
+
